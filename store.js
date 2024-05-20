@@ -143,6 +143,7 @@ function removeProductFromBasket(productId) {
 purchaseBtn.addEventListener("click", function () {
   shopBasketArray = [];
   basketGenerator(shopBasketArray);
+  totalPriceCalc(shopBasketArray);
 });
 
 function totalPriceCalc(shopBasketArray) {
